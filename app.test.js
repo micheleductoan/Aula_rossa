@@ -35,7 +35,7 @@ describe('POST /studenti --- caricamento nuovi studenti', () => {
         request(app)
         .post('/studenti')
         .send({
-            nome: "Marco",
+            nome: 'Marco',
             cognome: 'Zippo',
             nascita: '11/08/1989',
             matricola: 111111 })
@@ -47,8 +47,8 @@ describe('POST /studenti --- caricamento nuovi studenti', () => {
         request(app)
         .post('/studenti')
         .send({
-            nome: "Marco",
-            cognome: 'Zippo',
+            nome: 'Marco',
+            cognome: 666,
             nascita: 11,
             matricola: 111111  })
         .expect(400)
